@@ -1,16 +1,20 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import { quasar, transformAssetUrls } from '@quasar/vite-plugin';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  // IMPORTANT FOR GITHUB PAGES TO WORK
-  // base: '',
+  base: '/div-ded/',
   plugins: [
-    vue(),
+    vue({
+      template: { transformAssetUrls }
+    }),
     vueJsx(),
+      quasar({
+        sassVariables: 'src/quasar-variables.sass'
+      })
   ],
   resolve: {
     alias: {

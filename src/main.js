@@ -1,5 +1,4 @@
-import './assets/main.css';
-import './assets/icons/further.css';
+import './assets/main.scss';
 
 import { Quasar } from 'quasar';
 import '@quasar/extras/material-icons/material-icons.css';

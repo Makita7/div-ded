@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+// :root {
+//   /* General: */
+
+//     --gGrey : var(#707070);
+//     --gdSepia : var(#402408);
+//     --gSepia : var(#704214);
+//     --white : var(#FFFFFF);
+
+//   /* Main Swaps: */
+//     --mCoral : var('#FAAB78');
+//     --mlCoral : var(#FFDCA9);
+//     --mBeige : var(#FFF6E9);
+//     --mYellow : var(#FCF9BE);
+//     --mGreen : var(#E8F3D6);
+
+//   /* Dark Swaps: */
+
+//     --dCoral : var(#E87429);
+//     --dRed : var(#582610);
+//     --dGreen : var(#3F4B0E);
+//     --dlGreen : var(#79883F);
+
+//   /* Light Swaps: */
+
+//     --lYellow : var(#FFFBE9);
+//     --lBeige : var(#F4EAD5);
+//     --lGreen : var(#DAE2B6);
+//     --lGreen2 : var(#CCD6A6);
+
+
+// }
+
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition:
+        color 0.5s,
+        background-color 0.5s;
+    line-height: 1.6;
+    font-family:
+        Questrial,
+        Roboto,
+        sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

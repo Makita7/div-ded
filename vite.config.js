@@ -13,7 +13,7 @@ export default defineConfig({
     }),
     vueJsx(),
       quasar({
-        sassVariables: 'src/quasar-variables.sass'
+        sassVariables: 'src/quasar-variables.scss'
       })
   ],
   resolve: {

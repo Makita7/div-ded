@@ -1,12 +1,19 @@
 <script setup>
-import HeaderNav from './components/SideNav.vue';
+import SideNav from './components/SideNav.vue';
 
 </script>
 
 <template>
-  <div class="wrapper">
-    <HeaderNav />
-  </div>
+  <q-layout>
+
+    <SideNav />
+
+    <q-page-container>
+      <!-- <router-view /> -->
+      page content
+    </q-page-container>
+
+  </q-layout>
 </template>
 
 <style scoped lang="scss"></style>
@@ -17,6 +24,19 @@ import HeaderNav from './components/SideNav.vue';
 
   .big {
     width: 32px;
+  }
+}
+
+hr {
+  color: $nGrey;
+}
+
+@media screen and (min-width: 600px) {
+  .q-page-container {
+    background-image: url('./assets/bg-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
 }
 </style>

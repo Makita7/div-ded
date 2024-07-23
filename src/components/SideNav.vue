@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import SideNavLink from './SideNavLink.vue';
+import ButtonLarge from './ButtonLarge.vue';
 
 let sideNavOpen = ref(true);
 
@@ -18,6 +19,7 @@ let sideNavOpen = ref(true);
         <p class="text-h6 text-center text-uppercase q-ma-sm groups">Groups</p>
         <hr class="q-mx-md" />
         <side-nav-link />
+        <ButtonLarge class="logout" />
     </q-drawer>
 </template>
 
@@ -25,5 +27,11 @@ let sideNavOpen = ref(true);
 .groups {
     color: $dCoral;
     font-weight: bold;
+}
+
+.logout {
+    bottom: 1rem;
+    position: absolute;
+    width: 90%;
 }
 </style>

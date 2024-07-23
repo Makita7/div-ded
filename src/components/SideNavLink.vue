@@ -9,33 +9,31 @@
 
 <style lang="scss">
 .link {
-    border: solid 1px;
-    color: $dCoral;
+    border: $dCoral solid 1px;
+    color: $gSepia;
     border-radius: 10px;
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-weight: 500;
 }
 
 .link.active {
     background-color: $mBeige;
     border: none;
     color: #575757;
-    font-weight: 500;
 }
 
 .link:hover {
     background-color: $mlCoral;
     border: none;
     color: #575757;
-    font-weight: 500;
 }
 
 .active:hover {
     background-color: $mlCoral;
     border: none;
     color: #575757;
-    font-weight: 500;
 }
 </style>

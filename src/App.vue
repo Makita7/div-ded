@@ -39,4 +39,29 @@ hr {
     height: 100vh;
   }
 }
+
+.q-card {
+  border-radius: 16px;
+}
+
+.q-card__actions .q-btn--rectangle {
+  padding: 0 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gdSepia;
+  font-family: Questrial;
+}
+
+.text-h2 {
+  color: $dGreen;
+  font-family: Montserrat;
+  font-weight: bold;
+}
 </style>

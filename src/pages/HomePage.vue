@@ -5,10 +5,17 @@ import GroupListCard from '@/components/HomeComponents/GroupListCard.vue';
 </script>
 
 <template>
-    <div class="row">
-        <UserCard />
-        <GroupListCard />
+    <div class="container">
+        <div class="row justify-around q-mx-auto">
+            <UserCard />
+            <GroupListCard />
+        </div>
     </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.container {
+    height: 100%;
+    align-content: center;
+}
+</style>

@@ -5,7 +5,20 @@ import ButtonLarge from './ButtonLarge.vue';
 
 let sideNavOpen = ref(true);
 
-
+const groups = [
+    {
+        name: 'Board Game',
+        id: 'board-game',
+    },
+    {
+        name: 'Relationship',
+        id: 'relationship',
+    },
+    {
+        name: 'School Project',
+        id: 'school-project',
+    },
+]
 
 </script>
 
@@ -18,7 +31,7 @@ let sideNavOpen = ref(true);
         <hr class="q-mx-md q-mt-md" />
         <p class="text-h6 text-center text-uppercase q-ma-sm groups">Groups</p>
         <hr class="q-mx-md" />
-        <side-nav-link />
+        <side-nav-link v-for="g in groups" :key="g.id" :name="g.name" :id="g.id" />
         <ButtonLarge class="logout" />
     </q-drawer>
 </template>

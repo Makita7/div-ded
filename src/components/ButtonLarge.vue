@@ -23,6 +23,7 @@ import { ArrowLeftEndOnRectangleIcon } from '@heroicons/vue/24/outline';
     color: $gdSepia;
     font-weight: 500;
     font-size: 16px;
+    text-decoration: none;
 }
 
 .btn:hover {

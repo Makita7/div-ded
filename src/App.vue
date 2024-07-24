@@ -1,5 +1,6 @@
 <script setup>
 import SideNav from './components/SideNav.vue';
+import { RouterView } from 'vue-router';
 
 </script>
 
@@ -9,8 +10,7 @@ import SideNav from './components/SideNav.vue';
     <SideNav />
 
     <q-page-container>
-      <!-- <router-view /> -->
-      page content
+      <RouterView />
     </q-page-container>
 
   </q-layout>

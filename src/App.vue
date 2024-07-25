@@ -66,9 +66,28 @@ h6 {
   text-transform: uppercase;
 }
 
+.text-h3 {
+  color: $dGreen;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .bottom-right {
   bottom: 0;
   position: absolute;
   right: 0;
+}
+
+.my-card {
+  min-height: 31rem;
+
+  @media screen and (min-width: 1800px) {
+    min-height: 35rem;
+  }
+
+  .mt-4 {
+    margin-top: 4rem;
+  }
 }
 </style>

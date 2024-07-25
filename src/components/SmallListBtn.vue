@@ -29,10 +29,6 @@ const props = defineProps({
         svg {
             color: $gSepia;
         }
-
-        :hover {
-            background-color: cadetblue;
-        }
     }
 
     .beige {

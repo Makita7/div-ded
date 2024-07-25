@@ -1,5 +1,21 @@
-<script setup></script>
+<script setup>
+import ExpenseTimelineCard from '@/components/GroupComponents/ExpenseTimelineCard.vue';
+import GroupMembersCard from '@/components/GroupComponents/GroupMembersCard.vue';
 
-<template>groups</template>
+</script>
 
-<style lang="scss"></style>
+<template>
+    <div class="container">
+        <div class="row  justify-around q-mx-auto">
+            <GroupMembersCard />
+            <ExpenseTimelineCard />
+        </div>
+    </div>
+</template>
+
+<style lang="scss">
+.container {
+    height: 100%;
+    align-content: center;
+}
+</style>

@@ -1,5 +1,5 @@
 <script setup>
-import PrimaryBtn from './PrimaryBtn.vue';
+import PrimaryBtn from '../PrimaryBtn.vue';
 
 
 
@@ -13,7 +13,7 @@ import PrimaryBtn from './PrimaryBtn.vue';
         <p class="text-h2 text-uppercase text-center q-mb-none">Sara</p>
         <p class="text-capitalized text-center text-h6">sara1lovely@gmail.com</p>
 
-        <q-card-actions align="right" class="q-mx-md q-mb-md">
+        <q-card-actions align="right" class="q-mx-md q-mb-md bottom-right">
             <PrimaryBtn class="q-px-md" label="edit" />
         </q-card-actions>
     </q-card>
@@ -22,7 +22,7 @@ import PrimaryBtn from './PrimaryBtn.vue';
 <style lang="scss" scoped>
 .my-card {
     width: 100%;
-    max-width: 30rem;
+    max-width: 30%;
 
     .email {
         color: $gSepia;
@@ -30,15 +30,14 @@ import PrimaryBtn from './PrimaryBtn.vue';
     }
 
     .imgCont {
-        width: 25rem !important;
-        height: 25rem !important;
-        margin-left: 10%;
+        min-height: 20rem !important;
         margin-top: auto;
         text-align: center;
+        align-content: center;
 
         img {
-            width: 22rem;
-            height: 22rem;
+            width: 70%;
+            height: 70%;
             object-fit: cover;
         }
     }

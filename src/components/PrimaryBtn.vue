@@ -1,5 +1,5 @@
 <script setup>
-import { PencilIcon } from '@heroicons/vue/24/outline';
+import { PencilIcon, PlusIcon } from '@heroicons/vue/24/outline';
 import { defineProps } from 'vue';
 
 const props = defineProps({
@@ -14,7 +14,9 @@ const props = defineProps({
 
 <template>
     <q-btn class="primaryBtn" unelevated>
-        <PencilIcon class="q-mr-sm" v-if="label === 'edit'" /> {{ label }}
+        <PencilIcon class="q-mr-sm" v-if="label === 'edit'" />
+        <PlusIcon class="q-mr-sm" v-if="label === 'add group'" />
+        {{ label }}
     </q-btn>
 </template>
 

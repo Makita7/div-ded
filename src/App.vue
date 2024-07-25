@@ -63,5 +63,12 @@ h6 {
   color: $dGreen;
   font-family: Montserrat;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bottom-right {
+  bottom: 0;
+  position: absolute;
+  right: 0;
 }
 </style>

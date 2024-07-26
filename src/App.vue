@@ -90,4 +90,8 @@ h6 {
     margin-top: 4rem;
   }
 }
+
+.text-h3 {
+  font-size: 2.5rem;
+}
 </style>

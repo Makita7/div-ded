@@ -89,6 +89,10 @@ h6 {
   .mt-4 {
     margin-top: 4rem;
   }
+
+  .mb {
+    margin-bottom: 5rem;
+  }
 }
 
 .text-h3 {

@@ -12,8 +12,8 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="userCard">
-        <img :src="img" />
+    <div class="userCard text-center">
+        <img :src="img" alt='user profile image' />
         <p class="text-center name text-h5">{{ $props.name }}</p>
     </div>
 
@@ -23,7 +23,12 @@ const props = defineProps({
 .userCard {
     width: 30%;
 
+    img {
+        width: 8rem;
+    }
+
     .name {
+        font-size: 1.6rem;
         color: $dGreen;
         font-weight: bold;
     }

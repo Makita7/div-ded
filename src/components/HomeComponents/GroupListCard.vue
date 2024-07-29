@@ -27,8 +27,9 @@ let groups = ref([
 <template>
     <q-card class="my-card">
         <p class="text-h2 text-center mt-4">groups</p>
-
-        <GroupListItem v-for="g in groups" :id="g.id" :title="g.name" :color="g.color" />
+        <div class="mb">
+            <GroupListItem v-for="g in groups" :id="g.id" :title="g.name" :color="g.color" />
+        </div>
 
         <q-card-actions align="right" class="q-mx-md q-mb-md bottom-right">
             <PrimaryBtn class="q-px-md" label="add group" />

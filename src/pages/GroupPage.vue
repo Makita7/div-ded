@@ -1,5 +1,5 @@
 <script setup>
-import ExpenseTimelineCard from '@/components/GroupComponents/ExpenseTimelineCard.vue';
+import ExpenseTimelineCard from '@/components/ExpenseTimelineComponents/ExpenseTimelineCard.vue';
 import GroupMembersCard from '@/components/GroupComponents/GroupMembersCard.vue';
 
 </script>

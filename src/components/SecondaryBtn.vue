@@ -20,6 +20,7 @@ const props = defineProps({
     background-color: white;
     color: $gdSepia;
     border-radius: 8px;
+    text-transform: capitalize;
 
     svg {
         width: 24px;

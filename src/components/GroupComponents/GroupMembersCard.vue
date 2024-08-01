@@ -27,7 +27,7 @@ let users = ref([
 
 <template>
     <q-card class="my-card">
-        <p class="text-h3 text-uppercase text-center q-mb-none mt-4">Group Members</p>
+        <p class="text-h3 text-uppercase text-center q-mb-none mt-2">Group Members</p>
         <BubbleGraph />
         <div class="row justify-between q-mx-lg">
             <UserProfiles v-for="u in users" :id="u.id" :name="u.name" />

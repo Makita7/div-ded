@@ -26,7 +26,7 @@ let groups = ref([
 
 <template>
     <q-card class="my-card">
-        <p class="text-h2 text-center mt-4">groups</p>
+        <p class="text-h2 text-center mt-2">groups</p>
         <div class="mb">
             <GroupListItem v-for="g in groups" :id="g.id" :title="g.name" :color="g.color" />
         </div>
@@ -47,7 +47,7 @@ let groups = ref([
         min-height: 35rem;
     }
 
-    .mt-4 {
+    .mt-2 {
         margin-top: 4rem;
     }
 }

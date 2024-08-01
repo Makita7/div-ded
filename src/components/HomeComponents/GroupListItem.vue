@@ -21,7 +21,7 @@ const props = defineProps({
             <p class="detail">You Are Owed <b class="q-ml-sm"> -$113</b></p>
         </div>
         <div class="btns row self-center">
-            <SmallListBtn delete="true" class="q-mr-sm" />
+            <SmallListBtn icon="delete" secondary="true" class="q-mr-sm" />
             <SmallListBtn />
         </div>
     </div>

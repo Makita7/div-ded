@@ -3,14 +3,15 @@ import { MinusCircleIcon, PencilIcon } from '@heroicons/vue/24/outline';
 import { defineProps } from 'vue';
 
 const props = defineProps({
-    delete: Boolean
+    secondary: Boolean,
+    icon: String,
 })
 
 </script>
 
 <template>
-    <q-btn outline class="btn" :class="props.delete ? 'green' : 'beige'">
-        <MinusCircleIcon v-if="delete" />
+    <q-btn outline class="btn" :class="secondary ? 'green' : 'beige'">
+        <MinusCircleIcon v-if="icon === 'delete'" />
         <PencilIcon v-else />
     </q-btn>
 </template>
@@ -23,20 +24,29 @@ const props = defineProps({
         width: 24px;
     }
 
-    .green {
-        color: $lGreen2;
+}
 
-        svg {
-            color: $gSepia;
-        }
+.green {
+    color: $lGreen2 !important;
+
+    svg {
+        color: $gSepia !important;
     }
+}
 
-    .beige {
-        color: $lBeige;
+.beige {
+    color: $lBeige !important;
 
-        svg {
-            color: $gSepia;
-        }
+    svg {
+        color: $gSepia !important;
+    }
+}
+
+.btn {
+    width: 3rem;
+
+    svg {
+        width: 24px;
     }
 }
 </style>

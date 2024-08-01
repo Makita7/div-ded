@@ -36,7 +36,7 @@ hr {
     background-image: url('./assets/bg-desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -82,6 +82,7 @@ h6 {
 .my-card {
   min-height: 31rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 
   @media screen and (min-width: 1800px) {
     min-height: 35rem;

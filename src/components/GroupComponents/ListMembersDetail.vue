@@ -1,4 +1,9 @@
 <script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+    data: Array,
+});
 
 </script>
 
@@ -6,11 +11,19 @@
     <div class="item q-mx-lg row justify-between items-center q-my-md">
         <div class="row items-center">
             <img alt='user profile image' src='@/assets/ProfileDan.png' />
-            <p class='text-h6 q-mb-none q-ml-sm name'>Name</p>
+            <p class='text-h6 q-mb-none q-ml-sm name text-capitalize'>{{ data.name }}</p>
         </div>
-        <div class="text-right detail">
-            <p class="whoOwes q-mb-none">Owes Sara:</p>
-            <p class="amount q-mb-none">$45</p>
+        <div class="row">
+            <div class="text-right detail q-pl-lg" v-for="owes in data.owes" :key="owes.name"
+                v-if="data.owes.length > 0">
+                <p class="whoOwes q-mb-none text-capitalize">Owes {{ owes.name }}:</p>
+                <p class="amount q-mb-none">$ {{ owes.amount }}</p>
+            </div>
+            <div class="text-right detail q-pl-lg" v-for="owed in data.isOwed" :key="owed.name"
+                v-if="data.isOwed.length > 0">
+                <p class="whoOwes q-mb-none text-capitalize">Owed By {{ owed.name }}:</p>
+                <p class="amount q-mb-none">$ {{ owed.amount }}</p>
+            </div>
         </div>
     </div>
 </template>

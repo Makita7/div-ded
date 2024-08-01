@@ -4,6 +4,7 @@ import PrimaryBtn from '../PrimaryBtn.vue';
 import SecondaryBtn from '../SecondaryBtn.vue';
 import ExpenseItem from './ExpenseItem.vue';
 import DoughnutChart from './DoughnutChart.vue';
+import BubbleChartTest from '../GroupComponents/BubbleChartTest.vue';
 
 let expenses = ref([
     {

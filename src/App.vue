@@ -81,13 +81,14 @@ h6 {
 
 .my-card {
   min-height: 31rem;
+  margin-top: 2rem;
 
   @media screen and (min-width: 1800px) {
     min-height: 35rem;
   }
 
-  .mt-4 {
-    margin-top: 4rem;
+  .mt-2 {
+    margin-top: 2rem;
   }
 
   .mb {

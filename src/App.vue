@@ -37,6 +37,7 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    align-content: center;
   }
 }
 

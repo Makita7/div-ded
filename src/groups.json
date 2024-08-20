@@ -1,0 +1,184 @@
+{
+    "groups": [
+        {
+            "id": "grp123",
+            "name": "Weekend Getaway",
+            "users": [
+                {
+                    "id": "usr1",
+                    "name": "Alice"
+                },
+                {
+                    "id": "usr2",
+                    "name": "Bob"
+                },
+                {
+                    "id": "usr3",
+                    "name": "Charlie"
+                },
+                {
+                    "id": "usr4",
+                    "name": "Diana"
+                }
+            ],
+            "expenses": [
+                {
+                    "id": "exp1",
+                    "description": "Hotel Stay",
+                    "amount": 400,
+                    "paidBy": {
+                        "userId": "usr1",
+                        "name": "Alice"
+                    }
+                },
+                {
+                    "id": "exp2",
+                    "description": "Dinner at Restaurant",
+                    "amount": 120,
+                    "paidBy": {
+                        "userId": "usr2",
+                        "name": "Bob"
+                    }
+                },
+                {
+                    "id": "exp3",
+                    "description": "Gasoline",
+                    "amount": 60,
+                    "paidBy": {
+                        "userId": "usr3",
+                        "name": "Charlie"
+                    }
+                },
+                {
+                    "id": "exp4",
+                    "description": "Groceries",
+                    "amount": 80,
+                    "paidBy": {
+                        "userId": "usr4",
+                        "name": "Diana"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "grp456",
+            "name": "Office Party",
+            "users": [
+                {
+                    "id": "usr5",
+                    "name": "Eve"
+                },
+                {
+                    "id": "usr6",
+                    "name": "Frank"
+                },
+                {
+                    "id": "usr7",
+                    "name": "Grace"
+                },
+                {
+                    "id": "usr8",
+                    "name": "Hank"
+                }
+            ],
+            "expenses": [
+                {
+                    "id": "exp5",
+                    "description": "Catering",
+                    "amount": 300,
+                    "paidBy": {
+                        "userId": "usr5",
+                        "name": "Eve"
+                    }
+                },
+                {
+                    "id": "exp6",
+                    "description": "Decorations",
+                    "amount": 50,
+                    "paidBy": {
+                        "userId": "usr6",
+                        "name": "Frank"
+                    }
+                },
+                {
+                    "id": "exp7",
+                    "description": "Drinks",
+                    "amount": 150,
+                    "paidBy": {
+                        "userId": "usr7",
+                        "name": "Grace"
+                    }
+                },
+                {
+                    "id": "exp8",
+                    "description": "Music Equipment",
+                    "amount": 100,
+                    "paidBy": {
+                        "userId": "usr8",
+                        "name": "Hank"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "grp789",
+            "name": "Family Vacation",
+            "users": [
+                {
+                    "id": "usr9",
+                    "name": "Ivy"
+                },
+                {
+                    "id": "usr10",
+                    "name": "Jack"
+                },
+                {
+                    "id": "usr11",
+                    "name": "Karen"
+                },
+                {
+                    "id": "usr12",
+                    "name": "Leo"
+                }
+            ],
+            "expenses": [
+                {
+                    "id": "exp9",
+                    "description": "Airline Tickets",
+                    "amount": 800,
+                    "paidBy": {
+                        "userId": "usr9",
+                        "name": "Ivy"
+                    }
+                },
+                {
+                    "id": "exp10",
+                    "description": "Accommodation",
+                    "amount": 600,
+                    "paidBy": {
+                        "userId": "usr10",
+                        "name": "Jack"
+                    }
+                },
+                {
+                    "id": "exp11",
+                    "description": "Excursions",
+                    "amount": 200,
+                    "paidBy": {
+                        "userId": "usr11",
+                        "name": "Karen"
+                    }
+                },
+                {
+                    "id": "exp12",
+                    "description": "Meals",
+                    "amount": 250,
+                    "paidBy": {
+                        "userId": "usr12",
+                        "name": "Leo"
+                    }
+                }
+            ]
+        }
+    ]
+}

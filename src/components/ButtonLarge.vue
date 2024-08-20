@@ -1,13 +1,16 @@
 <script setup>
 import { ArrowLeftEndOnRectangleIcon } from '@heroicons/vue/24/outline';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div class="btn text-center text-capitalize q-mx-md q-mt-md ">
-        <ArrowLeftEndOnRectangleIcon class="q-mr-sm" />
+    <RouterLink to="/div-ded/login">
+        <div class="btn text-center text-capitalize q-mx-md q-mt-md ">
+            <ArrowLeftEndOnRectangleIcon class="q-mr-sm" />
 
-        wide Btn
-    </div>
+            wide Btn
+        </div>
+    </RouterLink>
 </template>
 
 <style lang="scss">

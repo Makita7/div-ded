@@ -1,13 +1,16 @@
 <script setup>
 import SideNav from './components/SideNav.vue';
 import { RouterView } from 'vue-router';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const user = route.meta.id;
 
 </script>
 
 <template>
   <q-layout>
-
-    <SideNav />
+    <SideNav v-if="route.path !== '/div-ded/login'" />
 
     <q-page-container>
       <RouterView />

@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import SideNavLink from './SideNavLink.vue';
 import ButtonLarge from './ButtonLarge.vue';
+import { useRoute } from 'vue-router';
+const route = useRoute();
 
 let sideNavOpen = ref(true);
 
@@ -45,6 +47,7 @@ const groups = [
 .logout {
     bottom: 1rem;
     position: absolute;
-    width: 90%;
+    width: 100%;
+    text-decoration: none;
 }
 </style>

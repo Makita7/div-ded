@@ -13,6 +13,7 @@ dist
 dist-ssr
 coverage
 *.local
+div-ded-firebase-adminsdk-ig4u8-455d99bfca.json
 
 /cypress/videos/
 /cypress/screenshots/

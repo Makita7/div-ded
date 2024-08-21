@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 import PrimaryBtn from '../PrimaryBtn.vue';
-import SecondaryBtn from '../SecondaryBtn.vue';
 import ExpenseItem from './ExpenseItem.vue';
 import DoughnutChart from './DoughnutChart.vue';
 import BubbleChartTest from '../GroupComponents/BubbleChartTest.vue';
@@ -54,8 +53,8 @@ let expenses = ref([
         </div>
 
         <q-card-actions align="right" class="q-mx-md q-mb-md bottom-right">
-            <SecondaryBtn class="q-px-md" label="Transfer" />
-            <PrimaryBtn class="q-px-md" label="add expense" />
+            <PrimaryBtn class="q-px-md" label="Transfer" type="secondary-btn" icon="transfer" />
+            <PrimaryBtn class="q-px-md" label="add expense" type="primary-btn" icon="add" />
         </q-card-actions>
     </q-card>
 </template>

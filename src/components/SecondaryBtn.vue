@@ -11,11 +11,11 @@ const props = defineProps({
 </script>
 
 <template>
-    <q-btn class="secondaryBtn" unelevated>{{ label }}</q-btn>
+    <q-btn class="secondary-btn" unelevated>{{ label }}</q-btn>
 </template>
 
 <style lang="scss" scoped>
-.secondaryBtn {
+.secondary-btn {
     border: $lBeige solid 2px;
     background-color: white;
     color: $gdSepia;

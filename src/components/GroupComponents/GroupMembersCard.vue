@@ -85,7 +85,7 @@ onMounted(() => {
         </div>
 
         <q-card-actions align="right" class="q-mx-md q-mb-md bottom-right">
-            <PrimaryBtn class="q-px-md" label="edit" />
+            <PrimaryBtn class="q-px-md" label="edit" icon="edit" />
         </q-card-actions>
     </q-card>
 </template>

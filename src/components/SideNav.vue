@@ -2,7 +2,8 @@
 import { ref } from 'vue';
 import SideNavLink from './SideNavLink.vue';
 import ButtonLarge from './ButtonLarge.vue';
-import { useRoute } from 'vue-router';
+import { useRoute, RouterLink } from 'vue-router';
+
 const route = useRoute();
 
 let sideNavOpen = ref(true);
@@ -34,7 +35,9 @@ const groups = [
         <p class="text-h6 text-center text-uppercase q-ma-sm groups">Groups</p>
         <hr class="q-mx-md" />
         <side-nav-link v-for="g in groups" :key="g.id" :name="g.name" :id="g.id" />
-        <ButtonLarge class="logout" />
+        <RouterLink to="/div-ded/login">
+            <ButtonLarge class="logout" label="Log Out" />
+        </RouterLink>
     </q-drawer>
 </template>
 
@@ -47,7 +50,7 @@ const groups = [
 .logout {
     bottom: 1rem;
     position: absolute;
-    width: 100%;
+    width: 90%;
     text-decoration: none;
 }
 </style>

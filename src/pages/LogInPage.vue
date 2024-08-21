@@ -17,7 +17,7 @@ import ButtonLarge from '@/components/ButtonLarge.vue';
             <ButtonLarge label="Log In" icon="log_in" />
             <ButtonLarge label="Log In with Google" type="secondary-btn" icon="google" />
             <ButtonLarge label="Register" type="secondary-btn" icon="register" />
-            <hr class="white" />
+            <div class="line" />
             <ButtonLarge label="Invite as Guest?" type="dark-btn" />
             <!-- <div class="row">
         <q-btn>Log In</q-btn>
@@ -37,10 +37,13 @@ import ButtonLarge from '@/components/ButtonLarge.vue';
     img {
         width: 100%;
     }
+}
 
-    .white {
-        color: white;
-        margin-top: 1rem;
-    }
+.line {
+    border-bottom: 2px solid white;
+    margin-top: 1rem;
+    width: 92%;
+    margin-left: 3.5%;
+    min-height: 0.2rem;
 }
 </style>
